@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include "patternHandler.hpp"
+#include "patternCall.hpp"
+#include "Utils.hpp"
 
 int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
@@ -22,9 +24,18 @@ int main(int argc, const char * argv[]) {
     pH.addPattern(myPattern3);
     pH.displayAllSavedPatterns();
     pH.writeSavedPatternsToFile("/Users/hazem/Xcode/PatternHandler/example2.txt");
-    pH.searchPatterns();
-    pH.searchPatterns();
-    pH.searchPatterns();
-    pH.searchPatterns();
+    std::string type;
+    int idValue=99;
+    std::string nameValue="yourPattern";
+    std::string filePathValue="src/patterns/Functional.pat";
+    bool calledValue = true;
+    type="id";
+    Utils::printPatterns(pH.searchPatterns(type, idValue));
+    type="name";
+    Utils::printPatterns(pH.searchPatterns(type, nameValue));
+    type="filepath";
+    Utils::printPatterns(pH.searchPatterns(type, filePathValue));
+    type="calledflag";
+    Utils::printPatterns(pH.searchPatterns(type, calledValue));
     return 0;
 }
