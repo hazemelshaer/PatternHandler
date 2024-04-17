@@ -10,9 +10,11 @@
 
 #include <stdio.h>
 #include <iostream>
+#include "patternCall.hpp"
 
 namespace Utils{
 std::string isCalledToString(bool flag);
 bool isCalledToBool(std::string);
+void printPatterns(std::vector<PatternCall>);
 };
 #endif /* Utils_hpp */

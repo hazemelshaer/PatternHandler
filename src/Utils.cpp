@@ -21,3 +21,8 @@ bool Utils::isCalledToBool(std::string flag){
     }
     return false;
 }
+void Utils::printPatterns(std::vector<PatternCall> patterns){
+    for(const auto& pattern:patterns){
+        std::cout<<pattern.id<<","<<pattern.name<<","<<pattern.patternFile<<","<<pattern.flag<<std::endl;
+    }
+}
