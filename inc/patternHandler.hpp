@@ -21,10 +21,36 @@ class PatternHandler{
     FileHandler fH;
     PatternMapper pM;
 public:
+    /**
+     * @brief 
+     * 
+     * @param filename 
+     */
     void loadPatternsFromFile(const std::string& filename);
+    /**
+     * @brief 
+     * 
+     * @param pattern 
+     */
     void addPattern(PatternCall pattern);
+    /**
+     * @brief 
+     * 
+     */
     void displayAllSavedPatterns();
+    /**
+     * @brief 
+     * 
+     * @param filename 
+     */
     void writeSavedPatternsToFile(const std::string& filename);
+    /**
+     * @brief 
+     * 
+     * @tparam T 
+     * @param value 
+     * @return std::vector<PatternCall> 
+     */
     template <class T> std::vector<PatternCall> searchPatterns(std::string, T value);
 };
 

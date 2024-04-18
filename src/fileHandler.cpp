@@ -7,6 +7,12 @@
 
 #include "fileHandler.hpp"
 
+/**
+ * @brief 
+ * 
+ * @param filename 
+ * @param patterns 
+ */
 void FileHandler::writeToFile(const std::string& filename, std::vector<PatternCall> patterns){
     std::ofstream out(filename);
     std::string called;
@@ -15,16 +21,20 @@ void FileHandler::writeToFile(const std::string& filename, std::vector<PatternCa
     }
     out.close();
 }
-
+/**
+ * @brief 
+ * 
+ * @param filename 
+ * @return std::vector<PatternCall> 
+ */
 std::vector<PatternCall> FileHandler::readFromFile(const std::string& filename){
     std::ifstream file(filename);
     std::string line;
     std::vector<PatternCall> vPatterns;
+    std::cout<<"List of patterns found in file:"<<std::endl;
     while (std::getline(file, line)) {
         std::cout<<line<<std::endl;
         std::istringstream iss(line);
-        
-        std::cout<<std::endl;
         std::string substring{};
         std::vector<std::string> substrings;
         PatternCall pattern;

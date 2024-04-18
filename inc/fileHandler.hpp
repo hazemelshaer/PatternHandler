@@ -22,7 +22,19 @@
 
 class FileHandler{
 public:
+    /**
+     * @brief 
+     * 
+     * @param filename 
+     * @param patterns 
+     */
     void writeToFile(const std::string& filename, std::vector<PatternCall> patterns);
+    /**
+     * @brief 
+     * 
+     * @param filename 
+     * @return std::vector<PatternCall> 
+     */
     std::vector<PatternCall> readFromFile(const std::string& filename);
 };
 #endif /* fileHandler_hpp */

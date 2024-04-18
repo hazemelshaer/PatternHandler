@@ -13,8 +13,24 @@
 #include "patternCall.hpp"
 
 namespace Utils{
+/**
+ * @brief 
+ * 
+ * @param flag 
+ * @return std::string 
+ */
 std::string isCalledToString(bool flag);
+/**
+ * @brief 
+ * 
+ * @return true 
+ * @return false 
+ */
 bool isCalledToBool(std::string);
+/**
+ * @brief 
+ * 
+ */
 void printPatterns(std::vector<PatternCall>);
 };
 #endif /* Utils_hpp */

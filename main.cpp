@@ -1,17 +1,17 @@
-//
-//  main.cpp
-//  PatternHandler
-//
-//  Created by Hazem Elshaer on 13.04.24.
-//
-
+/**
+ * @file main.cpp
+ * @author Hazem Elshaer
+ * @brief 
+ * @version 0.1
+ * @date 2024-04-18
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <iostream>
 #include "patternHandler.hpp"
-#include "patternCall.hpp"
-#include "Utils.hpp"
 
 int main(int argc, const char * argv[]) {
-    std::cout << "Hello, World!\n";
     PatternHandler pH;
     PatternCall myPattern1{66,"newPattern1","src/patterns/Functional.pat",false};
     PatternCall myPattern2{16,"newPattern2","src/patterns/Functional.pat",true};
