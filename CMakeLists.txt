@@ -35,8 +35,10 @@ add_executable(
 	${PATTERNHANDLER_SOURCE_DIR}/tst/test_main.cpp
 	${PATTERNHANDLER_SOURCE_DIR}/tst/Utils_test.cpp
 	${PATTERNHANDLER_SOURCE_DIR}/tst/fileHandler_test.cpp
+	${PATTERNHANDLER_SOURCE_DIR}/tst/patternMapper_test.cpp
 	${PATTERNHANDLER_SOURCE_DIR}/Utils.cpp
 	${PATTERNHANDLER_SOURCE_DIR}/fileHandler.cpp
+	${PATTERNHANDLER_SOURCE_DIR}/patternMapper.cpp
 )
 
 # Link Google Test to the test executable

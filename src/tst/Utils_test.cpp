@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-// #include <gmock/gmock.h>
-#include "Utils.hpp"  // Include your main classes header
+#include "Utils.hpp"
+
 using namespace Utils;
 TEST(UtilsTest, IsCalledToString) {
     EXPECT_EQ(isCalledToString(true), "true");

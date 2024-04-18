@@ -14,7 +14,7 @@
  * @return PatternCall 
  */
 PatternCall PatternMapper::getByID(int id){
-    PatternCall resultPattern;
+    PatternCall resultPattern{0};
     if(!patterns.empty()){
         for(const auto& pattern:patterns){
             if(id==pattern.id){
