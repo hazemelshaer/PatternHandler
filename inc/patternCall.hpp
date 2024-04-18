@@ -8,7 +8,10 @@
 #ifndef patterCall_h
 #define patterCall_h
 #include <string>
-
+/**
+ * @brief Pattern struct definition
+ * 
+ */
 struct PatternCall {
     int id;
     std::string name;

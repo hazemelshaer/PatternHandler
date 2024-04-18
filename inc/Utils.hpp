@@ -14,21 +14,21 @@
 
 namespace Utils{
 /**
- * @brief 
+ * @brief changes given bool to string
  * 
  * @param flag 
  * @return std::string 
  */
 std::string isCalledToString(bool flag);
 /**
- * @brief 
+ * @brief changes given string to bool
  * 
  * @return true 
  * @return false 
  */
 bool isCalledToBool(std::string);
 /**
- * @brief 
+ * @brief prints given vector of patterns to consol
  * 
  */
 void printPatterns(std::vector<PatternCall>);

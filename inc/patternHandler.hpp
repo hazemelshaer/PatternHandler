@@ -17,35 +17,41 @@
 #include "patternMapper.hpp"
 #include "Utils.hpp"
 
+/**
+ * @brief Pattern Handler class 
+ * 
+ */
 class PatternHandler{
     FileHandler fH;
     PatternMapper pM;
 public:
     /**
-     * @brief 
+     * @brief loadPatternsFromFile(): loads pattern from given file to memory
+     *  in patternMapper object
      * 
      * @param filename 
      */
     void loadPatternsFromFile(const std::string& filename);
     /**
-     * @brief 
+     * @brief addPattern(): adds a pattern to memory in patternMapper object
      * 
      * @param pattern 
      */
     void addPattern(PatternCall pattern);
     /**
-     * @brief 
+     * @brief displayAllSavedPatterns(): used to print all present patterns in memory
      * 
      */
     void displayAllSavedPatterns();
     /**
-     * @brief 
+     * @brief writeSavedPatternsToFile(): writes the patterns from memory to the given file name
      * 
      * @param filename 
      */
     void writeSavedPatternsToFile(const std::string& filename);
     /**
-     * @brief 
+     * @brief searchPatterns(): used to search for the given pattern element in the saved patterns
+     *  in memory, given the type of element and its value.
      * 
      * @tparam T 
      * @param value 

@@ -23,14 +23,16 @@
 class FileHandler{
 public:
     /**
-     * @brief 
+     * @brief writeToFile():
+     * writes given pattern to given file
      * 
      * @param filename 
      * @param patterns 
      */
     void writeToFile(const std::string& filename, std::vector<PatternCall> patterns);
     /**
-     * @brief 
+     * @brief readFromFile()
+     * read patterns from given file and returns them in vector of patterns
      * 
      * @param filename 
      * @return std::vector<PatternCall> 
